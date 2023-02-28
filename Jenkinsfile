@@ -24,7 +24,7 @@ sh 'mvn -Dmaven.test.failure.ignore=true install'
  
 stage('Build the image') {
 steps{
-sh 'sudo docker build -t tunagar/helloworld:v1 .  
+sh 'sudo docker build -t tunagar/helloworld:v1 Dockerfile  
 }
 }
 stage('Deploy Image') {
